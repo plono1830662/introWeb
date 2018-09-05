@@ -10,11 +10,9 @@ h1{
 h2, h3, h4, h5{
     font-size:16px;
     color: forestgreen;
-}
-h2, h3, h4, h5{
     text-decoration: overline underline;
+    text-align:center;
 }
-
 
 .mode{
     font-style: oblique;
@@ -25,4 +23,6 @@ h2, h3, h4, h5{
     font-family:"serif";
 
 }
-
+p{
+    text-align:center;
+}
