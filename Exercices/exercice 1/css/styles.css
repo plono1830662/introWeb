@@ -7,19 +7,20 @@ h1{
     text-decoration: underline;
     text-align: center;
 }
-.mode{
-    font-style: oblique;
-}
 h2, h3, h4, h5{
     font-size:16px;
-    color: aqua;
+    color: forestgreen;
 }
 h2, h3, h4, h5{
     text-decoration: overline underline;
 }
 
 
+.mode{
+    font-style: oblique;
+}
 
-
-
+#style{
+    text-transform: capitalize;
+}
 
