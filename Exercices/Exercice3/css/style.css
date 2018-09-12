@@ -12,13 +12,22 @@ h1{
 	border: 2px solid darkblue;
 	padding-left: 10px;
     float:left;
+    width: 20%;
 }
 .box2 {
   border: 2px solid red;
-    float:left;
+    float:right;
+    width:78%;
 }
 
 img{
-    float:right;
+    clear:right;
+    width:350px;
+    height:350px;
+    padding-left:200px;
 
+
+}
+p{
+    clear:both;
 }
