@@ -1,0 +1,28 @@
+﻿main{
+	margin:0 auto;  /* permet de centrer à 60% de la page*/
+	width: 60%;
+}
+h1,h2{
+	position:center;
+	text-align: center;
+}
+nav{
+	float:left;
+padding-right:100px;
+}
+
+#section1{
+	float:left;
+	text-align: center;
+width:400px;
+
+}
+
+#section2{
+
+	text-align: center;
+}
+footer{
+clear:left;
+font-style: italic;
+}
