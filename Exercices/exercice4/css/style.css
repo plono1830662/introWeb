@@ -5,24 +5,28 @@
 h1,h2{
 	position:center;
 	text-align: center;
+
 }
 nav{
 	float:left;
-padding-right:100px;
+	padding-right:100px;
+
 }
 
 #section1{
+	/*400px*/
 	float:left;
 	text-align: center;
-width:400px;
+	width: 30%;
 
 }
 
 #section2{
-
+	width:30%;
 	text-align: center;
+	float:right;
 }
 footer{
-clear:left;
+clear:both;
 font-style: italic;
 }
