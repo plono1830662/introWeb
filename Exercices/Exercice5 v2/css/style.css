@@ -28,7 +28,7 @@ article{
 	text-align: center;
 	margin-right: 30px;
 	height: 120px;
-
+	vertical-align: top;
 
 }
 aside{
@@ -39,9 +39,10 @@ aside{
 }
 footer{
 
-	float:right;
+
+
 	text-align: center;
-	margin-right:300px;
+
 }
 
 
