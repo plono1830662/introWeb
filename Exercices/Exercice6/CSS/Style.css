@@ -11,3 +11,14 @@
     font-size: 15px;
     padding-bottom: 3px;
 }
+.point{
+    color: red;
+}
+
+input{
+
+}
+label{
+    display: inline-block;
+    margin-top: 5%;
+}
