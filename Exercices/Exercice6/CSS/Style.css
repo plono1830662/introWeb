@@ -15,15 +15,11 @@
     color: red;
 }
 
-input{
-    display: inline-block;
-    margin-left: 40%;
-    width: 25%;
-}
+
 label{
     display:inline-block;
     margin-top: 3%;
-    width: 15%;
+    width: 25%;
 }
 .box1{
     width: 40%;
@@ -40,6 +36,6 @@ select{
 
 #choix{
     width: 27%;
-    margin-left:195px;
+    margin-left: 10px;
 
 }
