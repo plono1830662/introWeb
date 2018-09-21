@@ -16,51 +16,30 @@
 }
 
 input{
-
+    display: inline-block;
     margin-left: 40%;
-
+    width: 25%;
 }
 label{
-    display:block;
-    margin-top: 5%;
+    display:inline-block;
+    margin-top: 3%;
+    width: 15%;
+}
+.box1{
+    width: 40%;
+}
+.box2{
+    width: 25%;
 }
 select{
 
     margin-left: 50%;
 }
-#givenname{
-    width:40%;
-}
-#familyname{
-    width: 40%;
-}
-#adresse{
-    width: 40%;
-}
-#ville\ name{
-    width: 40%;
-}
-#telephone{
-    width: 25%;
-}
-#date\ inscirption{
-    width: 25%;
-}
-#date\ fin{
-    width: 25%;
-}
-#male{
 
-}
+
+
 #choix{
     width: 27%;
-}
-#carte\ crédit{
-    width: 25%;
-}
-#mot\ passe{
-    width: 40%;
-}
-#courriel{
-    width: 40%;
+    margin-left:195px;
+
 }
