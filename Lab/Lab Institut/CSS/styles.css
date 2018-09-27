@@ -131,6 +131,19 @@ label{
 .required{
 	color:red;
 }
+td{
+	border-style: dotted ;
+	border-color: #9ec06a;
+	vertical-align: middle;
+
+}
+th{
+
+}
+.caractere{
+	border-style: double;
+	border-color: black;
+}
 /*liens courriel*/
 section a:link {
 	color:#b1cb97;
