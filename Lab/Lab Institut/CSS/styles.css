@@ -114,7 +114,9 @@ label{
 .boite{
 	width:26%;
 }
-
+#comment{
+	vertical-align: top;
+}
 
 
 #reset{
@@ -132,17 +134,30 @@ label{
 	color:red;
 }
 td{
-	border-style: dotted ;
-	border-color: #9ec06a;
+	border-style: inset ;
+	border-color: darkslategrey;
 	vertical-align: middle;
 
 }
 th{
-
-}
-.caractere{
 	border-style: double;
 	border-color: black;
+	font-family: "Baskerville Old Face";
+}
+table{
+	margin-left: 32%;
+	text-align: center;
+	border-collapse: collapse;
+
+}
+th:hover{
+	background-color: #c2e28d;
+}
+h2{
+	font-style: oblique;
+	color: #b1cb97;
+	text-align: center;
+	font-size: medium;
 }
 /*liens courriel*/
 section a:link {
