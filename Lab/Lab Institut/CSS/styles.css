@@ -139,10 +139,12 @@ td{
 	vertical-align: middle;
 
 }
+/*meme couleur que titre*/
 th{
+	font:1em Verdana,serif,sans serif;
 	border-style: double;
 	border-color: black;
-	font-family: "Baskerville Old Face";
+
 }
 table{
 	margin-left: 32%;
@@ -154,7 +156,6 @@ th:hover{
 	background-color: #c2e28d;
 }
 h2{
-	font-style: oblique;
 	color: #b1cb97;
 	text-align: center;
 	font-size: medium;
