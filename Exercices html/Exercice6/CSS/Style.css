@@ -1,0 +1,41 @@
+.form-style{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.Entete{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.point{
+    color: red;
+}
+
+
+label{
+    display:inline-block;
+    margin-top: 3%;
+    width: 25%;
+}
+.box1{
+    width: 40%;
+}
+.box2{
+    width: 25%;
+}
+select{
+
+    margin-left: 50%;
+}
+
+
+
+#choix{
+    width: 27%;
+    margin-left: 10px;
+
+}

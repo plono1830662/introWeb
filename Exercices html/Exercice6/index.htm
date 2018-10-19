@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>FORMULAIRE</title>
+	<meta  charset="UTF-8">
+	<meta name="title" content="Titre de la page">
+	<meta name="description" content="description de la page">
+	<meta name="author" content="prenon NOM">
+	<meta name="keywords" content="mots-clé1, mots-clé2, ...">
+	<meta name="robots" content="index,follow">
+    <link rel="stylesheet " href ="CSS/Style.css"/>
+</head>
+<body>
+	<div class="form-style">
+		<div class="Entete">Entrez les informations du membre</div>
+			<form id="information" method="post" action="">
+                <div>
+                    <label for="givenname" >Prénom <span class="point">*</span></label><input class="box1" id="givenname" name="givenname" required >
+                </div>
+
+                <div>
+                    <label for="familyname"  >Nom <span class="point">*</span></label><input class="box1" id="familyname" name="familyname" required >
+                </div>
+
+                <div>
+                    <label for="Adresse" >Adresse</label><input class="box1" id="adresse" name="adresse" placeholder="999 rue">
+                </div>
+
+                <div>
+                    <label for="ville name" >Ville</label><input class="box1" id="ville name" name="ville name">
+                </div>
+
+                <div>
+                    <label for="telephone">Téléphone <span class="point">*</span></label><input class="box2" id="telephone" name="telephone" placeholder="(999) 999-9999" required>
+                </div>
+
+                <div>
+                    <label for="date inscirption">Date d'inscription <span class="point">*</span></label><input class="box2" id="date inscirption" name="date inscription" placeholder="jj/ms/aaaa" required>
+                </div>
+
+                <div>
+                    <label for="date fin">Date de fin</label><input class="box2" id="date fin" name="date fin" placeholder="aaaa-mm-jj">
+                </div>
+
+                    <label for="male">Sexe</label><input id="male" value="1" name="male" type="radio">Masculin
+                                                  <input id="femme" value="2" name="femme" type="radio">Féminin
+
+
+                <div>
+                    <label for="choix">Choix</label>
+
+                    <select id="choix" name="choix">
+                        <option label="americain express" value="Américain Express"></option>
+                        <option label="master card" value="Master card"></option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="carte crédit">Carte de crédit <span class="point">*</span></label><input class="box2" id="carte crédit" name="carte crédit" placeholder="9999 9999 9999 9999" required>
+                </div>
+
+                <div>
+                    <label for="mot passe">Mot de passse <span class="point">*</span></label><input class="box1" id="mot passe" name="mot passe" type="password" required>
+                </div>
+
+                <div>
+                    <label for="courriel">Courriel</label><input class="box1" id="courriel" name="courriel">
+                </div>
+
+                <div>
+                    <label for="reset"></label><input id="reset" type="reset">
+                </div>
+
+
+
+            </form>
+	</div>
+</body>
+</html>
