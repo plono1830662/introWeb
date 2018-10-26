@@ -2,7 +2,7 @@ function btnCalculer_onclick()
 { 
  	var Veterinaire,NbreJours,Serv,Prix,Message,CoutTot, CoutTotTaxe;
 
-    Veterinaire=document.getElementById("lstVeterinaire");
+    Veterinaire = document.getElementById("lstVeterinaire").value;
     NbreJours=parseInt(document.getElementById("txtNbreJours").value);
 
     if(document.getElementById("chkServ").checked==true)
@@ -26,7 +26,7 @@ function btnCalculer_onclick()
     CoutTot=(Prix*NbreJours)+Serv;
     CoutTotTaxe=CoutTot+(CoutTot*0.14975);
 
-    console.log("Vétérinaire responsable est"+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours");
+    console.log("Vétérinaire responsable est "+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours");
 
 
 }
