@@ -6,7 +6,9 @@ function btnCalculer_onclick()
     Film=document.getElementById("lstOptions").value;
     PrixIn=parseFloat(document.getElementById("txtBasePrix").value);
     Age=parseInt(document.getElementById("txtAge").value);
-    if(document.getElementById("chkMiSessions").checked==true)
+
+
+    if(document.getElementById("chkMiSession").checked==true)
     {
 
 
