@@ -19,22 +19,31 @@
 		<option value="Mélissa Caron" >Mélissa Caron</option>
 	</select>
 
-	<p class="Align"> Entrez le nombre de jours:<input class="champ" id="txtNbreJours" name="txtNbreJours" value="">  </p> 
+	<p class="Align"> Entrez le nombre de jours:<input class="champ" id="txtNbreJours" name="txtNbreJours" value="">  </p>
+	<p class="Align"> Entrez le nombre d'heure du Vétérinaire:<input class="champ" id="txtNbreHeure" name="txtNbreHeure" value="">  </p>
 
 	<!-- Case à cocher -->
 	<p class="Align">Service de toilettage<input type="checkbox" id="chkServ" name="chkServ">  </p> 
 
 	<!-- Case à cocher -->
 	<p class="Align">
-	Chien<input type="radio" name="radChoix" checked=true id="radChien">
-	Chat<input type="radio" name="radChoix" id="radChat">
+	Chien<input type="radio" name="radChoix" checked=true id="radChien" attribut onclick="btnAfficher1_onclick()">
+	Chat<input type="radio" name="radChoix" id="radChat" attribut onclick="btnAfficher2_onclick()">
 	</p>
 
 	<!-- label affichage -->
 	<p class="Align" id="lblMessage" name="lblMessage"> </p>
 
 	<!-- Bouton -->
-	<input class="label_plus" id="btnCalculer" name="btnCalculer" value="C   A   L   C   U   L   E   R" type="button" onclick="btnCalculer_onclick()"> 
+	<input class="label_plus" id="btnCalculer" name="btnCalculer" value="C   A   L   C   U   L   E   R" type="button" onclick="btnCalculer_onclick()">
+
+
+
+	<div class="Align">
+		<img id="imgChien" >
+		<img id="imgChat" >
+
+	</div>
 </form>
 <script src="JS/traitement.js"></script>
 </body>

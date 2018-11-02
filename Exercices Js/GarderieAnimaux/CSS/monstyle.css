@@ -42,4 +42,6 @@ float:center;
 margin-left: 245px;
 
 } 
-
+#lblMessage{
+    width: 30%;
+}
