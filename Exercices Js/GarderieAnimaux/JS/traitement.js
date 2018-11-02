@@ -71,11 +71,11 @@ function btnCalculer_onclick()
 }
 function btnAfficher1_onclick()
 {
-    document.clear();
-    document.getElementById("imgChien").src="img/Chien.png";
+
+    document.getElementById("imgAnimal").src="img/Chien.png";
 }
 function btnAfficher2_onclick()
 {
-    document.clear();
-    document.getElementById("imgChat").src="img/Chat.png";
+
+    document.getElementById("imgAnimal").src="img/Chat.png";
 }
