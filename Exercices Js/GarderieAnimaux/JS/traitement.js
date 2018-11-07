@@ -87,7 +87,7 @@ function btnCalculer_onclick()
     ChoisirAnimal();
     CalculerSalaire();
     CalculerRabais();
-    CalculerTotal()
+    CalculerTotal();
 
     document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est "+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours.";
 
