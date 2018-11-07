@@ -1,32 +1,19 @@
-function btnCalculer_onclick()
-{ 
- 	var Veterinaire,NbreJours,Serv,Prix,Message,CoutTot, CoutTotTaxe, Rabais,Salaire,NbreHeure;
+var Salaire, NbreHeure, Veterinaire, NbreJours, Serv, Prix, Message, CoutTot , CoutTotTaxe, Rabais;
 
+Salaire=0;
+NbreHeure=0;
+Veterinaire="";
+CoutTot = 0;
+Prix = 0;
+Serv = 0;
+NbreJours = 0;
+CoutTotTaxe = 0;
+Rabais = 0;
+
+function CalculerSalaire()
+{
     Veterinaire = document.getElementById("lstVeterinaire").value;
-    NbreJours=parseInt(document.getElementById("txtNbreJours").value);
     NbreHeure=parseInt(document.getElementById("txtNbreHeure").value);
-
-    if(NbreJours==1&&NbreJours<=5)
-    {
-        Rabais=0;
-    }
-    else {
-        if(NbreJours>5&&NbreJours<=10)
-        {
-            Rabais=0.05; 
-        }
-        else{
-            if (NbreJours>10&&NbreJours<=30)
-            {
-                Rabais=0.1;
-            }
-            else{
-                Rabais=0.15;
-            }
-        }
-        
-    }
-
     switch(Veterinaire)
     {
         case "Audrey Bouchard":
@@ -42,8 +29,10 @@ function btnCalculer_onclick()
             Salaire=NbreHeure*45;
             break;
     }
+}
 
-
+function ChoisirAnimal()
+{
     if(document.getElementById("chkServ").checked==true)
     {
         Serv=5;
@@ -54,16 +43,51 @@ function btnCalculer_onclick()
 
     if(document.getElementById("radChien").checked==true)
     {
-       Prix= 16.0;
-       Message="chien";
+        Prix= 16.0;
+        Message="chien";
     }
     else{
         Prix=17.0;
         Message="chat";
     }
+}
 
+function CalculerRabais()
+{
+    NbreJours=parseInt(document.getElementById("txtNbreJours").value);
+    if(NbreJours==1&&NbreJours<=5)
+    {
+        Rabais=0;
+    }
+    else {
+        if(NbreJours>5&&NbreJours<=10)
+        {
+            Rabais=0.05;
+        }
+        else{
+            if (NbreJours>10&&NbreJours<=30)
+            {
+                Rabais=0.1;
+            }
+            else{
+                Rabais=0.15;
+            }
+        }
+    }
+}
+
+function CalculerTotal()
+{
     CoutTot=(Prix*NbreJours)+Serv+Salaire;
     CoutTotTaxe=(CoutTot-(CoutTot*Rabais))+(CoutTot*0.14975);
+}
+
+function btnCalculer_onclick()
+{
+    ChoisirAnimal();
+    CalculerSalaire();
+    CalculerRabais();
+    CalculerTotal()
 
     document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est "+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours.";
 
