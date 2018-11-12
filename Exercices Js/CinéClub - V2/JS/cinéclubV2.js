@@ -1,12 +1,11 @@
-function btnCalculer_onclick()
+var  PrixIn, Age, Rabais, PrixFin, Temps, Film;
+
+
+Film=document.getElementById("lstOptions").value;
+
+function trouverAge()
 {
-    var  PrixIn, Age, Rabais, PrixFin, Temps, Film;
-
-
-    Film=document.getElementById("lstOptions").value;
-    PrixIn=parseFloat(document.getElementById("txtBasePrix").value);
     Age=parseInt(document.getElementById("txtAge").value);
-
 
     if(document.getElementById("chkMiSession").checked==true)
     {
@@ -48,10 +47,38 @@ function btnCalculer_onclick()
         }
 
     }
+}
 
-
+function calculerPrix()
+{
+    PrixIn=parseFloat(document.getElementById("txtBasePrix").value);
+    trouverAge();
     PrixFin=PrixIn-(PrixIn*Rabais);
+}
 
+function btnCalculer_onclick()
+{
+    calculerPrix();
     console.log("Un billet du "+Temps+" pour un spectateur de "+Age+" ans coûte " +PrixFin+"$ pour le film "+Film);
 
+}
+function lstImage1_onchange()
+{
+    alert("ok");
+    document.getElementById("imgFilm").src="JS/auposte.jpg";
+}
+function lstImage2_onchange()
+{
+    alert("ok");
+    document.getElementById("imgFilm").src="JS/colette.jpg";
+}
+function lstImage3_onchange()
+{
+    alert("ok");
+    document.getElementById("imgFilm").src="JS/halloween.jpg";
+}
+function lstImage4_onchange()
+{
+    alert("ok");
+    document.getElementById("imgFilm").src="JS/religieuse.jpg";
 }
