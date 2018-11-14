@@ -62,23 +62,22 @@ function btnCalculer_onclick()
     console.log("Un billet du "+Temps+" pour un spectateur de "+Age+" ans coûte " +PrixFin+"$ pour le film "+Film);
 
 }
-function lstImage1_onchange()
+function lstImage_onchange()
 {
     alert("ok");
-    document.getElementById("imgFilm").src="JS/auposte.jpg";
-}
-function lstImage2_onchange()
-{
-    alert("ok");
-    document.getElementById("imgFilm").src="JS/colette.jpg";
-}
-function lstImage3_onchange()
-{
-    alert("ok");
-    document.getElementById("imgFilm").src="JS/halloween.jpg";
-}
-function lstImage4_onchange()
-{
-    alert("ok");
-    document.getElementById("imgFilm").src="JS/religieuse.jpg";
+    switch (Film){
+        case"Au poste":
+            document.getElementById("imgFilm").src="JS/auposte.jpg";
+            break;
+        case"Colette":
+            document.getElementById("imgFilm").src="JS/colette.jpg";
+            break;
+        case"Halloween":
+            document.getElementById("imgFilm").src="JS/halloween.jpg";
+            break;
+        case"La religieuse":
+            document.getElementById("imgFilm").src="JS/religieuse.jpg";
+            break;
+    }
+
 }
