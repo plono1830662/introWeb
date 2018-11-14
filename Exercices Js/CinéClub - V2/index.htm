@@ -16,10 +16,10 @@
         <!-- Liste déroulante -->
         <p> Sélectionnez le choix du film:
             <select id="lstOptions" size=1 name="lstOptions" onchange="lstImage_onchange()">
-                <option selected >Au poste!</option>
-                <option >Colette</option>
-                <option >Halloween</option>
-                <option >La religieuse</option>
+                <option selected value="Au poste!">Au poste!</option>
+                <option value="Colette">Colette</option>
+                <option value="Halloween">Halloween</option>
+                <option value="La religieuse">La religieuse</option>
             </select>
         </p>
         <!-- Radio bouton -->
@@ -35,7 +35,7 @@
         <p><button id="btnCalculer" name="btnCalculer" type="button" onclick="btnCalculer_onclick()">Calculer</button></p>
     </fieldset>
 </form>
-<div>
+<div >
     <img id="imgFilm" >
 </div>
 <script src="JS/cinéclubV2.js"></script>

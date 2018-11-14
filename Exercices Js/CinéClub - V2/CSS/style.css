@@ -58,3 +58,11 @@ input[type=radio] {
 	width:200px;
 	height: 45px;
 }
+div{
+ background-color:rgb(84,81,76,0.5);
+ padding:10px;
+ width:280px;
+ position: absolute;
+ left: 40%;
+ top: 750px;
+}

@@ -1,7 +1,6 @@
 var  PrixIn, Age, Rabais, PrixFin, Temps, Film;
 
 
-Film=document.getElementById("lstOptions").value;
 
 function trouverAge()
 {
@@ -58,26 +57,16 @@ function calculerPrix()
 
 function btnCalculer_onclick()
 {
+
+    Film=document.getElementById("lstOptions").value;
     calculerPrix();
     console.log("Un billet du "+Temps+" pour un spectateur de "+Age+" ans coûte " +PrixFin+"$ pour le film "+Film);
 
 }
 function lstImage_onchange()
 {
-    alert("ok");
-    switch (Film){
-        case"Au poste":
-            document.getElementById("imgFilm").src="JS/auposte.jpg";
-            break;
-        case"Colette":
-            document.getElementById("imgFilm").src="JS/colette.jpg";
-            break;
-        case"Halloween":
-            document.getElementById("imgFilm").src="JS/halloween.jpg";
-            break;
-        case"La religieuse":
-            document.getElementById("imgFilm").src="JS/religieuse.jpg";
-            break;
-    }
+
+    Film=document.getElementById("lstOptions").value;
+    document.getElementById("imgFilm").src="img/"+Film+".jpg";
 
 }
