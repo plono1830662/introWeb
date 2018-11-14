@@ -26,7 +26,8 @@ function btnAjouter_onclick()
 
 
 }
-function btnTrouverMoy_onclick()
+//---------Moyenne---------//
+function CalculMoy()
 {
     var Moy;
     Moy=0;
@@ -36,9 +37,18 @@ function btnTrouverMoy_onclick()
         Moy+=tabPoint[i];
     }
     Moy=Moy/tabPoint.length;
+    return Moy;
+
+}
+function btnTrouverMoy_onclick()
+{
+    var Moy=CalculMoy();
     document.getElementById("lblReponse").innerHTML="La moyenne est de "+Moy;
 }
-function btnTrouverMeilleur_onclick()
+
+
+//----------Meilleur--------//
+function TrouverMeil()
 {
     var Meil,Nom;
     Meil=0;
@@ -56,10 +66,16 @@ function btnTrouverMeilleur_onclick()
             Nom=Nom;
         }
     }
+    return Nom;
+}
+function btnTrouverMeilleur_onclick()
+{
+    var Nom=TrouverMeil();
     document.getElementById("lblReponse").innerHTML="La meilleur joueur est "+Nom;
 
 }
-function btnTrouverPire_onclick()
+//--------Pire-------//
+function TrouverPire()
 {
     var Pire,Nom;
     Pire=9999;
@@ -77,8 +93,16 @@ function btnTrouverPire_onclick()
             Nom=Nom;
         }
     }
-    document.getElementById("lblReponse").innerHTML="La pire joueur est "+Nom;
+    return Nom;
 }
+function btnTrouverPire_onclick()
+{
+    var Nom=TrouverPire();
+    document.getElementById("lblReponse").innerHTML="La pire joueur est "+Nom;
+
+}
+
+//-------Chercher------//
 function btnRechercher_onclick()
 {
     var NomRech,Nom,i;
