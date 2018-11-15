@@ -45,7 +45,7 @@ function Saisir()
 function valideChampsObligatoires()
 {
     var Valide=false;
-    if(valideExiste("txtNbre1")===true)
+    if(valideExiste("txtNbre1")===true&&valideExiste("txtNbre2")===true&&valideExiste("txtOperateur")===true)
     {
         Valide=true;
     }
