@@ -13,13 +13,10 @@ Rabais = 0;
 
 function VerifierCase()
 {
-    var Valide=false,tabValide=new Array(3);
-    tabValide[0]=valideExiste("txtNbreHeure");
-    tabValide[1]=valideExiste("txtNbreJours");
-    tabValide[1]=valideExiste("txtNomClient");
+    var Valide=false,tabValide=new Array("txtNbreHeure","txtNbreJours","txtNomClient","txtNum");
 
     for(i=0;i<tabValide.length;i++){
-        if(tabValide[i]!=Valide){
+        if(valideExiste(tabValide[i])!==Valide){
             Valide=true;
         }
     }
