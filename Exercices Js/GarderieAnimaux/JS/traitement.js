@@ -10,6 +10,37 @@ NbreJours = 0;
 CoutTotTaxe = 0;
 Rabais = 0;
 
+
+function VerifierCase()
+{
+    var Valide=false,tabValide=new Array(3);
+    tabValide[0]=valideExiste("txtNbreHeure");
+    tabValide[1]=valideExiste("txtNbreJours");
+    tabValide[1]=valideExiste("txtNomClient");
+
+    for(i=0;i<tabValide.length;i++){
+        if(tabValide[i]!=Valide){
+            Valide=true;
+        }
+    }
+
+    return Valide;
+
+}
+function valideExiste(Case)
+{
+    var Valide=false;
+    if(document.getElementById(Case).value==="")
+    {
+        Valide=false;
+        document.getElementById(Case).style.backgroundColor="red";
+    }
+    else{
+        Valide=true;
+        document.getElementById(Case).style.backgroundColor="white";
+    }
+    return Valide;
+}
 function CalculerSalaire()
 {
     Veterinaire = document.getElementById("lstVeterinaire").value;
@@ -84,12 +115,17 @@ function CalculerTotal()
 
 function btnCalculer_onclick()
 {
-    ChoisirAnimal();
-    CalculerSalaire();
-    CalculerRabais();
-    CalculerTotal();
 
-    document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est "+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours.";
+    if(VerifierCase()===true){
+        ChoisirAnimal();
+        CalculerSalaire();
+        CalculerRabais();
+        CalculerTotal();
+        document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est "+Veterinaire+". Le prix de la garde de votre "+Message+" est de "+CoutTotTaxe.toFixed(2)+"$ pour "+NbreJours+" jours.";
+    }
+
+
+
 
 
 }
