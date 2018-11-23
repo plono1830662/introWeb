@@ -45,12 +45,12 @@ function Saisir()
 }
 function valideChampsObligatoires()
 {
-    var Valide=false,tabCalcul=new Array("txtNbre1","txtNbre2","txtOperateur");
+    var Valide=true,tabCalcul=new Array("txtNbre1","txtNbre2","txtOperateur");
 
 
     for(i=0;i<tabCalcul.length;i++){
-        if(valideExiste(tabCalcul[i])!=Valide){
-            Valide=true;
+        if(valideExiste(tabCalcul[i])!==false){
+            Valide=false;
         }
     }
 
