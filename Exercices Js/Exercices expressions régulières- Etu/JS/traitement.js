@@ -1,7 +1,7 @@
 function btnValider_onclick()  //mettre la fonction dans un IF tester une fonction à la fois
 {
 
-   if (verifierEntreDixTrente("txtValidation")===true) {
+   if (verifierEntreUnVingt("txtValidation")===true) {
        document.getElementById("txtValidation").style.backgroundColor="white";
    }
    else{
@@ -36,12 +36,12 @@ function validerNo( Chaine )   // un chiffre peut etre 0 5 25 200 etc..
 
 function verifierEntreDixTrente( Chaine ) //un chiffre entre 10 et 30
 {
-    var Valide=/^[1-3][0-9]$/.test(document.getElementById(Chaine).value);
+    var Valide=/^[1-2][0-9]|30$/.test(document.getElementById(Chaine).value);
     return Valide;
 }
 
 function verifierEntreUnVingt( Chaine ) //un chiffre entre 1 et 20
 {
-    var Valide=/^[1-20]/.test(document.getElementById(Chaine).value);
+    var Valide=/^([0-9]|1[0-9]|20)$/.test(document.getElementById(Chaine).value);
     return Valide;
 }
