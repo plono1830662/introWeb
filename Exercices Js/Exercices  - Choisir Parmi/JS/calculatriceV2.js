@@ -6,7 +6,11 @@ function btnCalculer_onclick()
 
     if (valideChampsObligatoires()===true)
     {
-        Saisir();
+        if(valideFormat()===true){
+            Saisir();
+        }
+
+
     }
 
 }
@@ -50,12 +54,37 @@ function valideChampsObligatoires()
 
     for(i=0;i<tabCalcul.length;i++){
         if(valideExiste(tabCalcul[i])!==false){
-            Valide=false;
+            Valide=true;
         }
+    }
+
+
+    return Valide;
+}
+
+function valideFormat()
+{
+    var Valide=true,tabCalcul=new Array("txtNbre1","txtNbre2","txtOperateur");
+
+
+    if (ValideChaine(tabCalcul[0])===false){
+        Valide=false;
+        document.getElementById(tabCalcul[0]).style.backgroundColor="red";
+    }
+
+    if (ValideChaine(tabCalcul[1])===false){
+        Valide=false;
+        document.getElementById(tabCalcul[1]).style.backgroundColor="red";
+    }
+
+    if (ValideOP(tabCalcul[2])===false){
+        Valide=false;
+        document.getElementById(tabCalcul[2]).style.backgroundColor="red";
     }
 
     return Valide;
 }
+
 function valideExiste(Case)
 {
     var Valide=false;
@@ -69,4 +98,14 @@ function valideExiste(Case)
         document.getElementById(Case).style.backgroundColor="white";
     }
     return Valide;
+}
+
+function ValideChaine(Chaine)
+{
+    return /^[0-9][0-9]*$/.test(document.getElementById(Chaine).value);
+}
+
+function ValideOP(Chaine)
+{
+    return /^\+|\-|\*|\/$/.test(document.getElementById(Chaine).value);
 }
