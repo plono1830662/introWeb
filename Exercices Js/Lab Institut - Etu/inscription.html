@@ -39,13 +39,13 @@
 			<!--fin Nav-->
 			<h1>Entrez les informations du membre</h1>
 			<!--boîte de texte-->
-			<form method="get" id="frmMembre" action="">
-			<label id="lblMessageErreur"></label>
+			<form method="get" id="frmMembre" action="Reponse.htm" onsubmit="return frmMembre_onsubmit">
+			<span><label id="lblMessageErreur"></label></span>
 			<div><label>Nom<span>*</span></label><input type="text" id="txtNom" name="txtNom"  size="40" ></div>
 			<div><label>Prénom<span>*</span></label><input type="text" id="txtPrenom" name="txtPrenom" size="40"></div>
 			<div><label>Adresse</label><input type="text" id="txtAdresse" name="txtAdresse" size="40" ></div>
 			<div><label>Ville<span>*</span></label><input type="text" id="txtVille" name="txtVille" size="40" ></div>
-			<div><label>Code postal<span>*</span></label><input type="text" id="txtCodePostal" name="txtCodePostal" size="15" ></div>
+			<div><label>Code postal</label><input type="text" id="txtCodePostal" name="txtCodePostal" size="15" ></div>
 			<div><label for="txtTel">Téléphone<span>*</span></label><input type="text" id="txtTel" name="txtTel" size="13" class="obligatoire" value=""></div>
 			<div><label>Code permanant</label><input type="text" id="txtCodePerm" name="txtCodePerm" size="12" ></div>
 			<label for="type">Catégorie</label><select id="type" name="type">
@@ -53,7 +53,8 @@
 				<option value="étudiant">étudiant</option>
 				<option value="retraité">retraité</option>
 			</select>
-			<div id="Boutons"><input class="bouton" value="Envoyer" id="btnEnvoyer" type="button"onclick="frmMembre_onclick()" />   <input class="bouton" type="reset" value="Réintialiser"/></div>
+
+			<div id="Boutons"><input class="bouton" value="Envoyer" id="btnEnvoyer" type="submit"onsubmit="frmMembre_onsubmit()" />   <input class="bouton" type="reset" value="Réintialiser"/></div>
 		</form>
 			<!--ligne de séparation-->
 			<hr>
