@@ -2,10 +2,11 @@ function frmMembre_onsubmit()
 {
     var Valide= false;
 
-    if(valideChampsObligatoires()===true&&Valide===false){
+
+    if(valideChampsObligatoires()===true){
         document.getElementById("lblMessageErreur").innerHTML="";
-        if(valideFormat()===true&&Valide===false){
-            if(confirm("Continuer")===true&&Valide===false){
+        if(valideFormat()===true){
+            if(confirm("Continuer")===true){
                 document.getElementById("lblMessageErreur").innerHTML="Une place de membre vous couteras "+ calculerPrix()+" $";
                 Valide=true;
             }
