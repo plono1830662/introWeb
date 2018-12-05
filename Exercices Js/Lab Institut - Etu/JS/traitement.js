@@ -130,3 +130,5 @@ function ValideCodePerm(Chaine)
 {
     return /^[A-z]{4}[0-9]{8}$/.test(document.getElementById(Chaine).value);
 }
+
+
