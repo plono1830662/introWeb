@@ -190,7 +190,7 @@ function ValideTel(Chaine)
 }
 function ValidePoste(Chaine)
 {
-    return /([0-9][A-z][0-9] [A-z][0-9][A-z])|([A-z][0-9][A-z] [0-9][A-z][0-9])/.test(document.getElementById(Chaine).value);
+    return /^([0-9][A-z][0-9] [A-z][0-9][A-z])|([A-z][0-9][A-z] [0-9][A-z][0-9])$/.test(document.getElementById(Chaine).value);
 }
 function ValideCodePerm(Chaine)
 {
